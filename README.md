@@ -1,5 +1,4 @@
 # nvme drivers
-nvme drivers for riscv64 on Qemu and fu740 board
 
 ## install qemu
 
