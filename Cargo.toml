@@ -1,0 +1,13 @@
+[package]
+name = "nvme_driver"
+version = "0.1.0"
+edition = "2021"
+authors = [
+  "Le Chen <lenuulan@gmail.com>",
+]
+description = "PCI device drivers"
+
+
+[dependencies]
+volatile = "0.3"
+lock = { git = "https://github.com/DeathWish5/kernel-sync", rev = "8486b8" }
