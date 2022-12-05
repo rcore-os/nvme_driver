@@ -11,9 +11,9 @@ install_qemu:
               zlib1g-dev libexpat-dev pkg-config  libglib2.0-dev libpixman-1-dev git tmux python3 ninja-build
 	cd ~ && wget https://download.qemu.org/qemu-7.1.0.tar.xz
 	cd ~ && tar xvJf qemu-7.1.0.tar.xz
-	cd ~/qemu-7.0.0 && ./configure --target-list=riscv64-softmmu,riscv64-linux-user
-	cd ~/qemu-7.0.0 && make -j$(nproc)
-	cd ~/qemu-7.0.0 && sudo make install
+	cd ~/qemu-7.1.0 && ./configure --target-list=riscv64-softmmu,riscv64-linux-user
+	cd ~/qemu-7.1.0 && make -j$(nproc)
+	cd ~/qemu-7.1.0 && sudo make install
 
 build:
 	cargo build --release
